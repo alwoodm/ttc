@@ -8,3 +8,9 @@ services:
     volumes:
       - ./:/usr/share/nginx/html
     restart: unless-stopped
+    networks:
+      - ttc-network
+
+networks:
+  ttc-network:
+    driver: bridge
