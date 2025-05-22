@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technikum Technologii Cyfrowych</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://phpmyadmin.alwood.ovh/widgetChat.js" defer></script>
+    <link rel="stylesheet" href="http://phpmyadmin.alwood.ovh/widgetChat.css">
+</head>
+<body>
+    <!-- NAGŁÓWEK -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <h1><span>TTC</span> Technikum Technologii Cyfrowych</h1>
+            </div>
+            <nav>
+                <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Strona główna</a></li>
+                    <li><a href="#about">O szkole</a></li>
+                    <li><a href="#programs">Kierunki</a></li>
+                    <li><a href="#teachers">Kadra</a></li>
+                    <li><a href="#news">Aktualności</a></li>
+                    <li><a href="#recruitment">Rekrutacja</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SEKCJA POWITALNA -->
+    <section id="home" class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Projektuj przyszłość z TTC</h1>
+            <p>Nowoczesne technikum kształcące specjalistów IT gotowych na wyzwania jutra</p>
+            <a href="#recruitment" class="btn btn-primary">Dowiedz się więcej</a>
+        </div>
+    </section>
+
+    <!-- O SZKOLE -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">O Szkole</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Wiodąca placówka technologiczna w regionie</h3>
+                    <p>Technikum Technologii Cyfrowych powstało w 2010 roku jako odpowiedź na rosnące zapotrzebowanie na specjalistów IT. Nasza misja to kształcenie wysoko wykwalifikowanych absolwentów, którzy bez problemu odnajdą się na dynamicznie zmieniającym się rynku pracy.</p>
+                    <p>Stawiamy na praktyczne umiejętności, współpracę z firmami z branży oraz nowoczesne metody nauczania. Nasi uczniowie regularnie zdobywają laury w krajowych i międzynarodowych konkursach informatycznych.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://placehold.co/600x400/e9ecef/495057?text=Pracownia+komputerowa" alt="Pracownia komputerowa">
+                </div>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <i class="fas fa-medal"></i>
+                    <h3>98%</h3>
+                    <p>Zdawalność egzaminów zawodowych</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-user-graduate"></i>
+                    <h3>1500+</h3>
+                    <p>Absolwentów</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>12</h3>
+                    <p>Nowoczesnych pracowni</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-trophy"></i>
+                    <h3>56</h3>
+                    <p>Laureatów olimpiad</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KIERUNKI KSZTAŁCENIA -->
+    <section id="programs" class="programs">
+        <div class="container">
+            <h2 class="section-title">Kierunki Kształcenia</h2>
+            <div class="programs-container">
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Technik Programista</h3>
+                    <p>Kierunek dla osób zainteresowanych tworzeniem oprogramowania, aplikacji webowych i mobilnych. Nauczysz się projektować, testować oraz wdrażać rozwiązania informatyczne.</p>
+                    <h4>Zdobyte umiejętności:</h4>
+                    <ul>
+                        <li>Programowanie w językach Java, Python, JavaScript</li>
+                        <li>Tworzenie aplikacji webowych i mobilnych</li>
+                        <li>Projektowanie i zarządzanie bazami danych</li>
+                        <li>Testowanie oprogramowania</li>
+                    </ul>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Technik Informatyk</h3>
+                    <p>Kierunek dający wszechstronne przygotowanie w zakresie administrowania sieciami, zarządzania systemami operacyjnymi oraz obsługi sprzętu komputerowego.</p>
+                    <h4>Zdobyte umiejętności:</h4>
+                    <ul>
+                        <li>Konfiguracja i zarządzanie sieciami komputerowymi</li>
+                        <li>Administracja systemami operacyjnymi Windows/Linux</li>
+                        <li>Montaż i diagnostyka sprzętu komputerowego</li>
+                        <li>Zarządzanie bezpieczeństwem informatycznym</li>
+                    </ul>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Technik Grafiki Cyfrowej</h3>
+                    <p>Kierunek łączący artystyczne podejście z umiejętnościami technicznymi. Skupia się na projektowaniu graficznym, tworzeniu multimediów oraz obróbce cyfrowej materiałów wizualnych.</p>
+                    <h4>Zdobyte umiejętności:</h4>
+                    <ul>
+                        <li>Projektowanie interfejsów aplikacji i stron WWW</li>
+                        <li>Obróbka zdjęć i materiałów wideo</li>
+                        <li>Tworzenie animacji i grafiki 3D</li>
+                        <li>Przygotowanie materiałów do druku</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KADRA -->
+    <section id="teachers" class="teachers">
+        <div class="container">
+            <h2 class="section-title">Nasza Kadra</h2>
+            <div class="teachers-container">
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="https://placehold.co/300x300/e9ecef/495057?text=J.K" alt="Jan Kowalski">
+                    </div>
+                    <h3>dr inż. Jan Kowalski</h3>
+                    <p class="teacher-title">Kierownik kształcenia zawodowego</p>
+                    <p>Ekspert w dziedzinie programowania obiektowego i sztucznej inteligencji. Posiada 15-letnie doświadczenie w branży IT.</p>
+                </div>
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="https://placehold.co/300x300/e9ecef/495057?text=A.N" alt="Anna Nowak">
+                    </div>
+                    <h3>mgr Anna Nowak</h3>
+                    <p class="teacher-title">Nauczyciel przedmiotów zawodowych</p>
+                    <p>Specjalistka w zakresie projektowania interfejsów i UX/UI. Prowadzi zajęcia z grafiki komputerowej i projektowania stron WWW.</p>
+                </div>
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="https://placehold.co/300x300/e9ecef/495057?text=P.W" alt="Piotr Wiśniewski">
+                    </div>
+                    <h3>mgr inż. Piotr Wiśniewski</h3>
+                    <p class="teacher-title">Nauczyciel przedmiotów zawodowych</p>
+                    <p>Pasjonat systemów sieciowych i bezpieczeństwa informatycznego. Certyfikowany trener Cisco z 10-letnim doświadczeniem.</p>
+                </div>
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="https://placehold.co/300x300/e9ecef/495057?text=M.D" alt="Magdalena Dąbrowska">
+                    </div>
+                    <h3>mgr Magdalena Dąbrowska</h3>
+                    <p class="teacher-title">Nauczyciel przedmiotów zawodowych</p>
+                    <p>Ekspertka w dziedzinie baz danych i projektowania systemów informatycznych. Współpracuje z czołowymi firmami branży IT.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AKTUALNOŚCI -->
+    <section id="news" class="news">
+        <div class="container">
+            <h2 class="section-title">Aktualności</h2>
+            <div class="news-container">
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="https://placehold.co/600x400/e9ecef/495057?text=Hackathon" alt="Uczniowie na hackathonie">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">15 maja 2025</div>
+                        <h3>Zwycięstwo w Regionalnym Hackathonie</h3>
+                        <p>Nasi uczniowie zajęli pierwsze miejsce w regionalnym hackathonie, tworząc innowacyjną aplikację wspierającą edukację online. Gratulujemy zespołowi i życzymy dalszych sukcesów!</p>
+                        <a href="#" class="btn btn-secondary">Czytaj więcej</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="https://placehold.co/600x400/e9ecef/495057?text=Warsztaty" alt="Warsztaty z programowania">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">28 kwietnia 2025</div>
+                        <h3>Warsztaty z programowania mobilnego</h3>
+                        <p>W naszej szkole odbędą się dwudniowe warsztaty z programowania aplikacji mobilnych prowadzone przez specjalistów z Google. Serdecznie zapraszamy zainteresowanych uczniów!</p>
+                        <a href="#" class="btn btn-secondary">Czytaj więcej</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="https://placehold.co/600x400/e9ecef/495057?text=Wycieczka" alt="Wycieczka dydaktyczna">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">10 kwietnia 2025</div>
+                        <h3>Wycieczka do centrali Microsoft Polska</h3>
+                        <p>Uczniowie klas trzecich i czwartych uczestniczyli w wycieczce dydaktycznej do siedziby Microsoft Polska. Podczas wizyty mieli okazję poznać środowisko pracy programistów oraz najnowsze technologie.</p>
+                        <a href="#" class="btn btn-secondary">Czytaj więcej</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REKRUTACJA -->
+    <section id="recruitment" class="recruitment">
+        <div class="container">
+            <h2 class="section-title">Rekrutacja</h2>
+            <div class="recruitment-content">
+                <div class="recruitment-info">
+                    <h3>Dołącz do nas!</h3>
+                    <p>Rekrutacja na rok szkolny 2025/2026 już trwa. Oferujemy nowoczesne kształcenie, praktyki w renomowanych firmach IT oraz przyjazną atmosferę.</p>
+                    
+                    <h4>Terminy rekrutacji:</h4>
+                    <ul>
+                        <li><strong>15 maja - 30 czerwca 2025:</strong> Składanie dokumentów</li>
+                        <li><strong>5 lipca 2025:</strong> Ogłoszenie list kandydatów</li>
+                        <li><strong>10 lipca 2025:</strong> Potwierdzenie woli nauki</li>
+                        <li><strong>15 lipca 2025:</strong> Publikacja list przyjętych</li>
+                    </ul>
+                    
+                    <h4>Wymagane dokumenty:</h4>
+                    <ul>
+                        <li>Podanie o przyjęcie do szkoły</li>
+                        <li>Świadectwo ukończenia szkoły podstawowej</li>
+                        <li>Zaświadczenie o wynikach egzaminu ósmoklasisty</li>
+                        <li>2 zdjęcia legitymacyjne</li>
+                    </ul>
+                    
+                    <a href="#contact" class="btn btn-primary">Aplikuj teraz</a>
+                </div>
+                <div class="recruitment-image">
+                    <img src="https://placehold.co/600x800/e9ecef/495057?text=Rekrutacja" alt="Rekrutacja">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Galeria</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="https://placehold.co/600x400/e9ecef/495057?text=Zajęcia" alt="Zajęcia praktyczne">
+                    <div class="gallery-overlay">
+                        <span>Zajęcia praktyczne</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/600x400/e9ecef/495057?text=Pracownia" alt="Nowoczesna pracownia">
+                    <div class="gallery-overlay">
+                        <span>Nowoczesna pracownia</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/600x400/e9ecef/495057?text=Konkurs" alt="Konkurs programistyczny">
+                    <div class="gallery-overlay">
+                        <span>Konkurs programistyczny</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/600x400/e9ecef/495057?text=Prezentacja" alt="Prezentacja projektów">
+                    <div class="gallery-overlay">
+                        <span>Prezentacja projektów</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/600x400/e9ecef/495057?text=Budynek" alt="Budynek szkoły">
+                    <div class="gallery-overlay">
+                        <span>Budynek szkoły</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/600x400/e9ecef/495057?text=Drużyna" alt="Drużyna robotyczna">
+                    <div class="gallery-overlay">
+                        <span>Drużyna robotyczna</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/600x400/e9ecef/495057?text=Konferencja" alt="Konferencja IT">
+                    <div class="gallery-overlay">
+                        <span>Konferencja IT</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://placehold.co/600x400/e9ecef/495057?text=Laboratorium" alt="Laboratorium komputerowe">
+                    <div class="gallery-overlay">
+                        <span>Laboratorium komputerowe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Kontakt</h2>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h3>Napisz do nas</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Imię i nazwisko</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Wiadomość</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Wyślij wiadomość</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Informacje kontaktowe</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>ul. Cyfrowa 123, 00-001 Warszawa</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+48 22 123 45 67</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>sekretariat@ttc.edu.pl</p>
+                    </div>
+                    <div class="hours">
+                        <h4>Godziny otwarcia sekretariatu:</h4>
+                        <p>Poniedziałek - Piątek: 8:00 - 16:00</p>
+                    </div>
+                    <div class="map">
+                        <img src="https://placehold.co/600x300/e9ecef/495057?text=Mapa" alt="Mapa">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STOPKA -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-item">
+                    <h3>Technikum Technologii Cyfrowych</h3>
+                    <p>Kształcimy specjalistów przyszłości w dziedzinie technologii informatycznych.</p>
+                </div>
+                <div class="footer-item">
+                    <h3>Przydatne linki</h3>
+                    <ul>
+                        <li><a href="#">Dokumenty szkolne</a></li>
+                        <li><a href="#">Polityka prywatności</a></li>
+                        <li><a href="#">Biuletyn Informacji Publicznej</a></li>
+                        <li><a href="#">Mapa strony</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h3>Social Media</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Technikum Technologii Cyfrowych. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
